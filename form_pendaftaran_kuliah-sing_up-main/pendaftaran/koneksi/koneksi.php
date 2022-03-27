@@ -8,7 +8,7 @@ if($host){
 	echo "koneksi gagal.<br/>";
  }
 // isikan dengan nama database yang akan di hubungkan
-$db = mysqli_select_db($host, "penadaftaran_kuliah");
+$db = mysqli_select_db($host, "pendaftaran_kuliah");
 
 if($db){
 	echo "koneksi database berhasil.";
