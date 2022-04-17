@@ -29,7 +29,6 @@ if (isset($_POST['login'])) {
 		$_SESSION['nama_admin'] = $data1['nama_admin '];
 		$_SESSION['username'] = $data1['username'];
 		$_SESSION['password'] = $data1['password'];
-		$_SESSION['email'] = $data1['email'];
 		$_SESSION['level'] = $data1['level'];
 
 		header('location:../index-admin.php');

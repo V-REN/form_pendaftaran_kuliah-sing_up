@@ -1,6 +1,8 @@
 <?php
-$host = mysqli_connect("localhost","root","","ukk");
+$host = mysqli_connect("localhost","root","","pendaftaran_kuliah");
 $query = mysqli_query($host,'SELECT * FROM form');
+session_start();
+$_SESSION['id']
 ?>
 <table cellpadding="5" cellspacing="0" border="1">
     <tr>
@@ -14,6 +16,7 @@ $query = mysqli_query($host,'SELECT * FROM form');
         <th>ALAMAT</th>
         <th>ID</th>
         <th>FOTO</th>
+        <th>STATUS</th>
 
 
     </tr>
@@ -32,6 +35,7 @@ $query = mysqli_query($host,'SELECT * FROM form');
         <td><?php echo $row['alamat']?></td>
         <td><?php echo $row['id']?></td>
         <td><img src="<?php echo $row['foto']?>" width ="100px"></td>
+        <td><?php echo $row['Status']?></td>
     </tr>  
     <?php 
    }
